@@ -1,20 +1,36 @@
-/*
+body {
+  background-image: url("grey.png");
+  font-size: 36pt;
+}
 
-Some references you may find useful:
+.board {
+  border: 5px #23538a solid;
+  margin: 36px auto;
+}
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/border#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/margin#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/color#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/height#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/text-align#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/width#Syntax
-http://www.colorzilla.com/gradient-editor/
+.dark_square {
+  background: #63bbdd;
+  background: -moz-linear-gradient(left,  #63bbdd 0%, #23538a 100%);
+  background: -webkit-gradient(linear, left top, right top,color-stop(0%,#63bbdd),color-stop(100%,#23538a));
+  background: -webkit-linear-gradient(left,  #63bbdd 0%,#23538a 100%);
+  background: -o-linear-gradient(left,  #63bbdd 0%,#23538a 100%);
+  background: -ms-linear-gradient(left,  #63bbdd 0%,#23538a 100%);
+  background: linear-gradient(to right,  #63bbdd 0%,#23538a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63bbdd', endColorstr='#23538a',GradientType=1 );
+}
 
-Note that I've included the background image for the page in this folder, "grey.png"
+.square{
+  padding: 0px 1px;
+  height: 72px;
+  width: 72px;
+  text-align: center;
+  color: rgb(255, 153, 51);
+  text-shadow: 1px 1px 1px black;
+}
 
-Write your CSS rules below.
-
-*/
+/*██╗   ██╗███████╗██╗     ██╗   ██╗
+  ██║   ██║██╔════╝██║     ██║   ██║
+  ██║   ██║█████╗  ██║     ██║   ██║
+  ╚██╗ ██╔╝██╔══╝  ██║     ██║   ██║
+   ╚████╔╝ ███████╗███████╗╚██████╔╝
+    ╚═══╝  ╚══════╝╚══════╝ ╚═════╝*/
