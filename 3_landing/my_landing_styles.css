@@ -1,9 +1,14 @@
-/* This is here to give everything a red border, just to make it easier to see while developing. */
-* {
-  box-sizing: border-box;
+.box {
+  color: #FFFFFF;
+  background-color: #4DB8FF;
 
-  border: thin red solid;
+  text-align: center;
+  text-decoration: none;
+
+  padding-top:5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+
+  display: block;
 }
-/* You can turn it off if you want. (delete or comment it out) */
-
-/* Write your rules below */
